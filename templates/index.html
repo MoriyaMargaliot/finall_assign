@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Your Asset!</title>
+</head>
+<body>
+    <h2>Details Form</h2>
+    <form method="POST" action="{{ url_for('yourDetails') }}">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.your_type.label }}
+            {{ form.your_type }}
+        </div>
+        <div>
+            {{ form.room_number.label }}
+            {{ form.room_number }}
+        </div>
+        <div>
+            {{ form.floor.label }}
+            {{ form.floor}}
+        </div>
+        <div>
+            {{ form.area.label }}
+            {{ form.area }}
+        </div>
+        <div>
+            {{ form.num_of_images.label }}
+            {{ form.num_of_images }}
+        </div>
+        <div>
+            {{ form.Street.label }}
+            {{ form.Street }}
+        </div>
+        <div>
+            {{ form.number_in_street.label }}
+            {{ form.number_in_street }}
+        </div>
+        <div>
+            {{ form.city_area.label }}
+            {{ form.city_area }}
+        </div>
+        <div>
+            {{ form.has_elevator.label }}
+            {{ form.has_elevator }}
+        </div>
+        <div>
+            {{ form.has_parking.label }}
+            {{ form.has_parking }}
+        </div>
+        <div>
+            {{ form.has_bars.label }}
+            {{ form.has_bars }}
+        </div>
+        <div>
+            {{ form.has_AirConditione.label }}
+            {{ form.has_AirConditione }}
+        </div>
+        <div>
+            {{ form.has_storage.label }}
+            {{ form.has_storage }}
+        </div>
+        <div>
+            {{ form.has_balcony.label }}
+            {{ form.has_balcony }}
+        </div>
+        <div>
+            {{ form.has_mamad.label }}
+            {{ form.has_mamad }}
+        </div>
+        <div>
+            {{ form.handicap_friendly.label }}
+            {{ form.handicap_friendly }}
+        </div>
+        <div>
+            {{ form.condition.label }}
+            {{ form.condition }}
+        </div>
+        <div>
+            {{ form.entrance_date.label }}
+            {{ form.entrance_date }}
+        </div>
+        <div>
+            {{ form.furniture.label }}
+            {{ form.furniture }}
+        </div>
+        <div>
+            {{ form.published_days.label }}
+            {{ form.published_days }}
+        </div>
+        <div>
+            {{ form.description.label }}
+            {{ form.description }}
+        </div>
+        <div>
+            <button type="predict">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
